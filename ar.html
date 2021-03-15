@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link style="height: 100%; width: 100%;" href="Assets/Images/icon.png" rel="icon">
+
+    <title>TOMMY HILFIGER COLLECTION AR PREVIEW</title>
+
+    <!-- The following libraries and polyfills are recommended to maximize browser support -->
+    <!-- NOTE: you must adjust the paths as appropriate for your project -->
+
+    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+
+    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <!-- desktop -->
+  <div id="desktop" style="overflow:hidden;">
+    <div class="background">
+      <div style="padding: 0;">
+        <div class="contentcontainer" style="text-align: center;">
+          <div>
+            <img width="200px" src="Assets/Images/th-logo2.png" alt="TH logo" style="padding: 50px 0 35px;">
+          </div>
+
+          <div>
+            <h style="font-size: 18px; font-family: Bookq;">Ops.. we detected you are on desktop,</h>
+            <br>
+            <h style="font-size: 18px; font-family: Bookq;">please scan QR code to experience on
+              mobile.</h>
+          </div>
+
+          <div>
+            <img width="220px" src="Assets/Images/QRcode.png" alt="" style="padding: 60px 20px 0;">
+          </div>
+
+          <div id="footer" style="text-align: center; width: 100%; padding-bottom: 20px;">
+            <p style="font-family: Book; font-size: 14px; margin-bottom: 5px; color:white; bottom:0px;">
+                © 2021 TOMMY HILFIGER. All rights reserved. |
+              Powered by <a href="https://www.conten.tech/"
+                style="text-decoration: underline; color:white">Conten.T</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------- -->
+
+
+    <div id="mobile">
+        <div>
+    <div>
+        <img style="height: 50%; width: 50%; margin-top: 15px;" class="center" src="Assets/Images/logo.png">
+    </div>
+
+    <div id="card">
+        <!-- All you need to put beautiful, interactive 3D content on your site: -->
+        <model-viewer
+            src="https://raw.githubusercontent.com/lowtung/th-demo-ar-test/main/Assets/Images/PROP_Stand_02.glb"
+            ios-src="https://raw.githubusercontent.com/lowtung/th-demo-ar-test/main/Assets/Images/Beverage_Can.usdz"
+            poster="https://raw.githubusercontent.com/lowtung/th-demo-ar-test/main/Assets/Images/TH_PROP_Stand02_Lookdev_B.png"
+            alt="A 3D model of Jacket 1" shadow-intensity="1" camera-controls auto-rotate ar>
+        </model-viewer>
+        <section class="attribution">
+            <span style="float:left;">
+                <p style="font-family: Bold; margin-left: 5%; font-size: 1.5rem; text-align: left; 
+                letter-spacing: 2px; color: #001C4B;">AUGMENTED</p>
+                <p style="font-family: Book; margin-left: 5%; margin-top: -15%; font-size: 1.5rem; text-align: left; 
+                letter-spacing: 2px; color: #001C4B;">REALITY</p>
+            </span>
+            <!-- <a class="cc" href="https://creativecommons.org/licenses/by/2.0/" target="_blank">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg">
+            </a> -->
+        </section>
+
+    </div>
+
+    <div>
+        <img style="height: 8%; width: 8%; margin-top: -20%; margin-right: 1.5%; float:right;" class="center" src="Assets/Images/arrow.png">
+      </div>
+
+      <div>
+        <img style="height: 50%; width: 50%; margin-top: 0%; " class="center" src="Assets/Images/steps.png">
+      </div>
+
+    <div id="footer2" style="text-align: center; width: 100%; padding-bottom: 0px;">
+        <p style="font-family: Book; font-size: 0.6rem; margin-top: 0px; color:  #001C4B; bottom:0px; ">
+            © 2021 TOMMY HILFIGER. All rights reserved. |
+            Powered by <a href="https://www.conten.tech/" style="text-decoration: underline; color:#010101">Conten.T</a>
+        </p>
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+
+    <!-- 💁 Include both scripts below to support all browsers! -->
+
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+    </script>
+
+    <script>
+        // Check whether this is an Android device.
+        const isAndroid = /android/i.test(navigator.userAgent);
+        // This fallback URL is used if the Google app is not installed and up to date.
+        const fallbackUrl = 'https://arvr.google.com/scene-viewer?file=https%3A%2F%2Fstorage.googleapis.com%2Far-answers-in-search-models%2Fstatic%2FTiger%2Fmodel.glb&link=https%3A%2F%2Fgoogle.com&title=Tiger';
+
+        // This intent URL triggers Scene Viewer on Android and falls back to
+        // fallbackUrl if the Google app is not installed and up to date.
+        const sceneViewerUrl = 'intent://arvr.google.com/scene-viewer/1.0?file=https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb&title=Tiger#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=' +
+            fallbackUrl + ';end;';
+
+        // // Create a link.
+        // var a = document.createElement('a');
+        // a.appendChild(document.createTextNode('Tiger'));
+        // // Set the href to the intent URL on Android and the fallback URL
+        // // everywhere else.
+        // a.href = isAndroid ? sceneViewerUrl : fallbackUrl;
+        // // Add the link to the page.
+        // document.body.appendChild(a);
+    </script>
+
+
+<script>
+    var d = document.getElementById("desktop");
+    var m = document.getElementById("mobile");
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        console.log("mobile detected");
+        d.style.display = "none";
+        m.style.display = "block";
+    } else {
+        console.log("desktop detected");
+        d.style.display = "block";
+        m.style.display = "none";
+    }
+</script>
+
+
+</body>
+
+
+</html>

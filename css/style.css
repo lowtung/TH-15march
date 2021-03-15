@@ -1,0 +1,248 @@
+@font-face {
+    font-family: "Bold";
+    src: url("../css/font/FuturaLTProBold.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Boldq";
+    src: url("../css/font/FuturaLTProBoldOblique.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Book";
+    src: url("../css/font/FuturaLTProBook.otf");
+  }
+
+  @font-face {
+    font-family: "Bookq";
+    src: url("../css/font/FuturaLTProBookOblique.otf");
+  }
+
+  @font-face {
+    font-family: "Light";
+    src: url("../css/font/FuturaLTProLight.otf");
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  html {
+    min-height: 80vh;
+    font-family: "Book";
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    width: 100%;
+
+  }
+
+  /* .background {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    background: #ffffff;
+    border: 20px solid transparent;
+    background-image: url("Assets/Images/bg.jpg"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } */
+
+    .background {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url("../Assets/Images/bgd.jpg"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } 
+
+  .background2{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    width: 100%;
+    height: 100%;
+    background-position: -250px;
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } 
+
+  .btn {
+    margin: auto;
+    background-color: #001C4B;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 3vw;
+    font-family: 'Bold';
+    letter-spacing: 3px;
+    color: 010101;
+    text-decoration: none;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10); */
+    margin: auto;
+    display: block;
+    text-decoration: none;
+
+  }
+
+
+  #footer {
+    background-color: transparent;
+    /* flex: 0 0 50px; */
+    margin-top:0;
+    margin: 0;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    position:absolute;
+  }
+
+  #footer2 {
+    background-color: transparent;
+    /* flex: 0 0 50px; */
+    margin-top:0;
+    margin: 0;
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 100%;
+    height: 0%;
+    position:absolute;
+  }
+
+  .form {
+    background-color: white;
+    border-color: #010101;
+    border-width: 1px;
+    height: 60%;
+    width: 100%;
+    /* border: none; */
+    padding: 8px 3rem;
+    font-size: 4vw;
+    font-family: "Book";
+    text-align: center;
+    margin: auto;
+    display: block;
+
+  }
+
+
+/* body {
+    margin: 1em;
+    padding: 0;
+    font-family: Google Sans, Noto, Roboto, Helvetica Neue, sans-serif;
+    color: #244376;
+  } */
+  
+  
+  #card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 0;
+    /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.093); */
+    overflow: visible;
+  }
+  
+  model-viewer {
+    width: 100%;
+    height: 300px;
+    background-color: maroon;
+    background-image: url("https://raw.githubusercontent.com/lowtung/th-demo-ar-test/main/Assets/Images/store.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    --poster-color: #ffffff00;
+  }
+
+  
+  .attribution {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    /* margin: 1em; */
+    text-align: center;
+  }
+  
+  /* .attribution p {
+    margin: 5% 0 5%;
+  } */
+  
+  .attribution img {
+    opacity: 0.5;
+    height: 2em;
+  }
+  
+  .attribution .cc {
+    flex-shrink: 0;
+    text-decoration: none;
+  }
+  
+  /* footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.5em;
+  } */
+
+  @media (max-width: 400px) {
+    .background {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      width: 100%;
+      height: 100%;
+      background-position: -150px;
+      background-repeat: repeat;
+      background-size: cover;
+      background-image: url("../Assets/Images/bgd.jpg"); 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    } 
+
+  }
